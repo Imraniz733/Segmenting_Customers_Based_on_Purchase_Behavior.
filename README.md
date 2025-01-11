@@ -3,9 +3,9 @@
 ## Table of Contents
 - [Introduction](#Introduction)
 - [Data Description](#Data-Description)
-- [Data Cleaning And Processing](#Data_Clening_And_Processing)
-- [Exploratory Data Analysis(EDA)](#Exploratory_Data_Analysis)
-- [Insights And Recommendations](#Insights_And_Recommendations) 
+- [Data Cleaning And Processing](#Data-Clening-And-Processing)
+- [Exploratory Data Analysis(EDA)](#Exploratory-Data-Analysis)
+- [Insights And Recommendations](#Insights-And-Recommendations) 
 
 ## Introduction
 In the modern retail industry, understanding customer behavior is crucial for tailoring personalized marketing strategies and improving overall customer experience. This project uses purchase behavior data from an online retail platform to focus on customer segmentation. By segmenting customers based on their purchasing patterns, we aim to uncover valuable insights that can inform targeted marketing campaigns, promotions, and product recommendations.
