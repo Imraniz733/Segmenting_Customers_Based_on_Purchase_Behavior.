@@ -40,3 +40,58 @@ The dataset used in this project contains records of customer transactions from 
 We have listed the top 10 products by total revenue, where Dotcom Postage shows the highest revenue of 206,828.93, while Chilli Lights records the lowest revenue among the top products at 53,788.38.
 **2. Top 10 Products by Quantity:** 
 We have listed the top 10 products by Quantity, where world war 2 gliders asstd designs shows the highest quantity of 53847, while pack of 60 pink paisley cake cases records the lowest quantity among the top products at 24573.
+** 3. Sales by Country:** 
+| Country               | Total Sales (in USD) |
+|-----------------------|----------------------|
+| United Kingdom        | 7,802,160.84         |
+| Netherlands           | 285,557.43           |
+| Eire                  | 264,114.80           |
+| Germany               | 222,086.18           |
+| France                | 197,783.45           |
+| Australia             | 138,208.68           |
+| Switzerland           | 56,394.24            |
+| Spain                 | 54,829.69            |
+| Belgium               | 40,910.96            |
+| Sweden                | 36,595.91            |
+| Japan                 | 35,340.62            |
+| Norway                | 35,184.77            |
+| Portugal             | 29,367.02            |
+| Finland               | 22,326.74            |
+| Channel Islands       | 20,086.29            |
+| Denmark               | 18,768.14            |
+| Italy                 | 16,890.51            |
+| Cyprus                | 12,946.29            |
+| Austria               | 10,154.32            |
+| Hong Kong             | 10,117.04            |
+| Singapore             | 9,120.39             |
+| Israel                | 7,907.82             |
+| Poland                | 7,213.14             |
+| Unspecified           | 4,749.79             |
+| Greece                | 4,710.52             |
+| Iceland               | 4,310.00             |
+| Canada                | 3,666.38             |
+| Malta                 | 2,505.47             |
+| United Arab Emirates  | 1,902.28             |
+| USA                   | 1,730.92             |
+| Lebanon               | 1,693.88             |
+| Lithuania             | 1,661.06             |
+| RSA                   | 1,381.86             |
+| European Community    | 1,291.75             |
+| Brazil                | 1,143.60             |
+| Czech Republic        | 707.72               |
+| Bahrain               | 548.40               |
+| Saudi Arabia          | 131.17               |
+
+** 3.  Sales Over Time:**
+Sales Growth:
+- From January (1, 2011) to November (11, 2011), there is a general upward trend in sales with fluctuations.
+The sales start around 0.5 million in January and gradually increase, peaking in November at approximately 1.4 million.
+- Fluctuations: There are noticeable fluctuations during the year. For example, after an initial increase from January to March, sales dip in April and then recover in subsequent months.
+This indicates some seasonal variability in sales, possibly influenced by external factors such as demand, promotions, or holidays.
+- Peak Sales in November: The highest sales occur in November 2011, reaching approximately 1.4 million. This could be attributed to:
+- End-of-year promotions. Holiday season sales (e.g., Black Friday, Christmas preparations).
+Sharp Decline in December: After peaking in November, sales experience a sharp decline in December, dropping back to around 0.5 million.
+-This drop could be due to:
+* Post-holiday season slowdown.
+* Reduced demand after a period of high sales activity.
+* Inventory depletion or fewer promotions.
