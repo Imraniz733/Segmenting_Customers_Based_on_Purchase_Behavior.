@@ -5,6 +5,7 @@
 - [Data Description](#Data-Description)
 - [Data Cleaning And Processing](#Data_Clening_And_Processing)
 - [Exploratory Data Analysis(EDA)](#Exploratory_Data_Analysis)
+- [Insights And Recommendations](#Insights_And_Recommendations) 
 
 ## Introduction
 In the modern retail industry, understanding customer behavior is crucial for tailoring personalized marketing strategies and improving overall customer experience. This project uses purchase behavior data from an online retail platform to focus on customer segmentation. By segmenting customers based on their purchasing patterns, we aim to uncover valuable insights that can inform targeted marketing campaigns, promotions, and product recommendations.
@@ -38,9 +39,11 @@ The dataset used in this project contains records of customer transactions from 
 ## Exploratory Data Analysis
 **1. Top 10 Products by Revenue:** 
 We have listed the top 10 products by total revenue, where Dotcom Postage shows the highest revenue of 206,828.93, while Chilli Lights records the lowest revenue among the top products at 53,788.38.
+
 **2. Top 10 Products by Quantity:** 
 We have listed the top 10 products by Quantity, where world war 2 gliders asstd designs shows the highest quantity of 53847, while pack of 60 pink paisley cake cases records the lowest quantity among the top products at 24573.
-** 3. Sales by Country:** 
+
+**3. Sales by Country:**
 | Country               | Total Sales (in USD) |
 |-----------------------|----------------------|
 | United Kingdom        | 7,802,160.84         |
@@ -82,7 +85,9 @@ We have listed the top 10 products by Quantity, where world war 2 gliders asstd 
 | Bahrain               | 548.40               |
 | Saudi Arabia          | 131.17               |
 
-** 3.  Sales Over Time:**
+
+**4. Sales Over Time:**
+
 Sales Growth:
 - From January (1, 2011) to November (11, 2011), there is a general upward trend in sales with fluctuations.
 The sales start around 0.5 million in January and gradually increase, peaking in November at approximately 1.4 million.
@@ -91,7 +96,90 @@ This indicates some seasonal variability in sales, possibly influenced by extern
 - Peak Sales in November: The highest sales occur in November 2011, reaching approximately 1.4 million. This could be attributed to:
 - End-of-year promotions. Holiday season sales (e.g., Black Friday, Christmas preparations).
 Sharp Decline in December: After peaking in November, sales experience a sharp decline in December, dropping back to around 0.5 million.
+
 -This drop could be due to:
 * Post-holiday season slowdown.
 * Reduced demand after a period of high sales activity.
 * Inventory depletion or fewer promotions.
+
+**5. RFM Analysis:** 
+RFM analysis was performed separately for customers and guest transactions. The following steps were followed:
+- Recency: Calculated as the number of days since the last transaction.
+- Frequency: Counted the number of unique invoices per customer.
+- Monetary: Summed up the total transaction value for each customer.
+- Assigned R, F, and M scores using quintiles and combined them to create an overall RFM score.
+- Segmented customers into categories like:
+- Champions (RFM Score >= 12)
+- Loyal (RFM Score 9–11)
+- Potential Loyalist (RFM Score 6–8)
+- At Risk (RFM Score < 6)
+
+## Customer Segment Distribution
+The customers were segmented based on their RFM (Recency, Frequency, and Monetary) scores into four categories: **Champions**, **Potential Loyalists**, **Loyal**, and **At Risk**.
+
+- **Champions**: 1278  
+- **Potential Loyalists**: 1202  
+- **Loyal**: 1006  
+- **At Risk**: 886
+
+## RFM Table for Customers
+
+| **CustomerID** | **Recency** | **Frequency** | **Monetary** | **R** | **F** | **M** | **RFM_Score** | **Segment**  | **Type**     |
+|----------------|-------------|---------------|--------------|-------|-------|-------|---------------|--------------|-------------|
+| 12346.0        | 326         | 2             | 0.00         | 1     | 2     | 1     | 4             | At Risk      | Customers   |
+| 12347.0        | 2           | 7             | 4310.00      | 5     | 4     | 5     | 14            | Champions    | Customers   |
+| 12348.0        | 75          | 4             | 1797.24      | 2     | 3     | 4     | 9             | Loyal        | Customers   |
+| 12349.0        | 19          | 1             | 1757.55      | 4     | 1     | 4     | 9             | Loyal        | Customers   |
+| 12350.0        | 310         | 1             | 334.40       | 1     | 1     | 2     | 4             | At Risk      | Customers   |
+
+---
+## Guest Segments Distribution
+
+The same segmentation was applied to guest transactions, resulting in the following distribution:
+
+- **Loyal**: 869  
+- **Potential Loyalists**: 686  
+- **Champions**: 399  
+- **At Risk**: 299  
+
+## RFM Table for Guest Transactions
+
+| **InvoiceNo**  | **Recency** | **Frequency** | **Monetary** | **R** | **F** | **M** | **RFM_Score** | **Segment**            | **Type**    |
+|----------------|-------------|---------------|--------------|-------|-------|-------|---------------|------------------------|-------------|
+| 536544         | 373         | 527           | 5521.14      | 1     | 5     | 5     | 11            | Loyal                  | Guest       |
+| 536555         | 373         | 2             | 2.97         | 1     | 3     | 2     | 6             | Potential Loyalist     | Guest       |
+| 536558         | 373         | 1             | 99.75        | 1     | 1     | 3     | 5             | At Risk                | Guest       |
+| 536565         | 373         | 2             | 6.70         | 1     | 3     | 2     | 6             | Potential Loyalist     | Guest       |
+| 536592         | 373         | 592           | 6915.65      | 1     | 5     | 5     | 11            | Loyal                  | Guest       |
+
+---
+
+**6. Top 10 Customers by Monetary Value:**
+| **CustomerID** | **Monetary**       |
+|----------------|--------------------:|
+| 14646.0        | 280,384.905443     |
+| 18102.0        | 256,438.490000     |
+| 17450.0        | 187,482.170000     |
+| 14911.0        | 133,276.032065     |
+| 12415.0        | 124,825.082975     |
+| 14156.0        | 113,384.140000     |
+| 17511.0        | 88,125.380000      |
+| 16684.0        | 65,892.080000      |
+| 13694.0        | 62,653.100000      |
+| 15311.0        | 59,419.340000      |
+
+## Insights
+1. The highest-spending customer contributed 280,385 in monetary value, with significant contributions from the top 10 customers.
+2. The Champions segment has the highest number of customers (1278), followed by Potential Loyalists (1202).
+3. Many high-value transactions are from guest users, indicating potential for conversion into loyal customers.
+
+## Recommendations
+1. Focus on re-engaging At Risk customers through personalized offers and loyalty programs.
+2. Encourage guest users to create accounts by offering signup bonuses and exclusive deals.
+3. Nurture Potential Loyalists with targeted campaigns to boost spending and convert them into Champions.
+
+
+
+
+
+
