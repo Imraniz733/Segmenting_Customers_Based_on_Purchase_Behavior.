@@ -7,7 +7,7 @@
 - [Exploratory Data Analysis(EDA)](#Exploratory_Data_Analysis)
 
 ## Introduction
-#### In the modern retail industry, understanding customer behavior is crucial for tailoring personalized marketing strategies and improving overall customer experience. This project uses purchase behavior data from an online retail platform to focus on customer segmentation. By segmenting customers based on their purchasing patterns, we aim to uncover valuable insights that can inform targeted marketing campaigns, promotions, and product recommendations.
+In the modern retail industry, understanding customer behavior is crucial for tailoring personalized marketing strategies and improving overall customer experience. This project uses purchase behavior data from an online retail platform to focus on customer segmentation. By segmenting customers based on their purchasing patterns, we aim to uncover valuable insights that can inform targeted marketing campaigns, promotions, and product recommendations.
 
 ## Data Description
 The dataset used in this project contains records of customer transactions from an online retail platform. The data includes details on individual customer purchases, which allows us to analyze and segment customers based on their purchase behavior. Below is a description of the key columns in the dataset:
@@ -36,6 +36,7 @@ The dataset used in this project contains records of customer transactions from 
 - The dataset contains a total of 1,061 records with zero values in the UnitPrice column. To address this, we examined the Description and StockCode of the products and applied an imputation technique by taking the average UnitPrice of similar non-missing entries. Additionally, we identified two entries with the largest negative Quantity of -11,062, labeled as "bad debt" in the Description field. These entries were considered outliers and were subsequently removed from the dataset. 
 
 ## Exploratory Data Analysis
-#### **1. Top 10 Products by Revenue:** 
-First, we have listed the top 10 products by total revenue where dotcom postage shows the highest revenue in 206828.93 and the lowest chilli lights revenue in 53788.38 
-#### 2. Top 10 Products by Quantity:
+**1. Top 10 Products by Revenue:** 
+We have listed the top 10 products by total revenue, where Dotcom Postage shows the highest revenue of 206,828.93, while Chilli Lights records the lowest revenue among the top products at 53,788.38.
+**2. Top 10 Products by Quantity:** 
+We have listed the top 10 products by Quantity, where world war 2 gliders asstd designs shows the highest quantity of 53847, while pack of 60 pink paisley cake cases records the lowest quantity among the top products at 24573.
