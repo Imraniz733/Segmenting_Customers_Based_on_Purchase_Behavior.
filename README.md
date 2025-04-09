@@ -37,7 +37,7 @@ The dataset used in this project contains records of customer transactions from 
 - The dataset contains a total of 1,061 records with zero values in the UnitPrice column. To address this, we examined the Description and StockCode of the products and applied an imputation technique by taking the average UnitPrice of similar non-missing entries. Additionally, we identified two entries with the largest negative Quantity of -11,062, labeled as "bad debt" in the Description field. These entries were considered outliers and were subsequently removed from the dataset. 
 
 
-##RFM Analysis 
+## RFM Analysis 
 RFM analysis was performed separately to build a dashboard on powerBI. The following steps were followed:
 - Recency: Calculated as the number of days since the last transaction.
 - Frequency: Counted the number of unique invoices per customer.
