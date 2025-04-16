@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Introduction](#Introduction)
 - [Data Description](#Data-Description)
-- [Data Cleaning And Processing](#Data-Clening-And-Processing)
+- [Data Cleaning And Processing](#Data-Cleaning-And-Processing)
 - [RFM Analysis](#RFM-Analysis)
 - [Recommendations](#Recommendations) 
 
